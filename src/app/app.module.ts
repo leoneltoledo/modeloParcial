@@ -8,7 +8,11 @@ import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { TablaPeliculaComponent } from './componentes/tabla-pelicula/tabla-pelicula.component';
 import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle-pelicula.component';
 import { AltaPeliculaComponent } from './componentes/alta-pelicula/alta-pelicula.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
+import { AltaActorComponent } from './pages/alta-actor/alta-actor.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CountryService } from './services/country.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,20 @@ import { FormsModule } from '@angular/forms';
     BienvenidoComponent,
     TablaPeliculaComponent,
     DetallePeliculaComponent,
-    AltaPeliculaComponent
+    AltaPeliculaComponent,
+    TablaPaisesComponent,
+    AltaActorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    CountryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

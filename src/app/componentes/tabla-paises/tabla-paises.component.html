@@ -1,0 +1,12 @@
+<h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Seleccione país para su actor</span>
+</h4>
+
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let country of countryList" (click)="enviarEventoPaisSeleccionado(country)">
+      <span>{{country.name}}</span>
+      <img src={{country.flag}} >
+    </li>
+  </ul>
+
+  

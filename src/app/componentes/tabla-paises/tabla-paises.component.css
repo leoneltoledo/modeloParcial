@@ -1,0 +1,11 @@
+img{
+    height: 40px;
+    width: 50px;
+}
+
+ul {
+    overflow:hidden;
+    overflow-y:scroll;
+    height: 300px;
+    width: 300px;
+}
