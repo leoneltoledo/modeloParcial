@@ -10,9 +10,12 @@ import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle
 import { AltaPeliculaComponent } from './componentes/alta-pelicula/alta-pelicula.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TablaPaisesComponent } from './componentes/tabla-paises/tabla-paises.component';
-import { AltaActorComponent } from './pages/alta-actor/alta-actor.component';
+import { AltaRepartidorComponent } from './pages/alta-repartidor/alta-repartidor.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CountryService } from './services/country.service';
+import { TablaActorComponent } from './componentes/tabla-actor/tabla-actor.component';
+import { PeliculaaltaComponent } from './pages/peliculaalta/peliculaalta.component';
+import { FormAltaRepartidorComponent } from './componentes/form-alta-repartidor/form-alta-repartidor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CountryService } from './services/country.service';
     DetallePeliculaComponent,
     AltaPeliculaComponent,
     TablaPaisesComponent,
-    AltaActorComponent
+    AltaRepartidorComponent,
+    TablaActorComponent,
+    PeliculaaltaComponent,
+    FormAltaRepartidorComponent
   ],
   imports: [
     BrowserModule,

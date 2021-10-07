@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltaActorComponent } from './alta-actor.component';
+import { FormAltaRepartidorComponent } from './form-alta-repartidor.component';
 
-describe('AltaActorComponent', () => {
-  let component: AltaActorComponent;
-  let fixture: ComponentFixture<AltaActorComponent>;
+describe('FormAltaRepartidorComponent', () => {
+  let component: FormAltaRepartidorComponent;
+  let fixture: ComponentFixture<FormAltaRepartidorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AltaActorComponent ]
+      declarations: [ FormAltaRepartidorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AltaActorComponent);
+    fixture = TestBed.createComponent(FormAltaRepartidorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

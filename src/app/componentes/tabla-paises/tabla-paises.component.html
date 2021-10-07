@@ -1,4 +1,11 @@
-<h4 class="d-flex justify-content-between align-items-center mb-3">
+<div class="container" *ngIf="!seleccionoContinente">
+  <h5 class="mb-3">Seleccioná continente</h5>
+  <button (click)="europa()">Europa</button>
+            <button (click)="africa()">Africa</button>
+</div>
+
+<div class="container" *ngIf="seleccionoContinente">
+  <h4 class="d-flex justify-content-between align-items-center mb-3">
     <span class="text-muted">Seleccione país para su actor</span>
 </h4>
 
@@ -8,5 +15,8 @@
       <img src={{country.flag}} >
     </li>
   </ul>
+</div>
+
+
 
   

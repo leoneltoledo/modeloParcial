@@ -19,7 +19,11 @@ export class CountryService {
     this.country = c;
   }
 
-  getAllCountrys() {
-    return this.http.get('https://restcountries.eu/rest/v2/all');
+  getAllCountrysEurope() {
+    return this.http.get('https://restcountries.eu/rest/v2/regionalbloc/eu');
+  }
+
+  getAllCountrysAfrica() {
+    return this.http.get('https://restcountries.eu/rest/v2/regionalbloc/au');
   }
 }
