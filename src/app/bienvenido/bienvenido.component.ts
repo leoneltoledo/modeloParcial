@@ -11,9 +11,6 @@ export class BienvenidoComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    console.log(this.getGit().subscribe(res =>{
-      console.log('res');
-    });
   }
 
   getGit(){
